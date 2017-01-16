@@ -12,6 +12,7 @@ const Utils = require('node-utils');
   - [Methods](#methods)
     - [`beautifyDate(date, [format, seperator])`](#user-content-beautifydatedate-format-seperator)
 	- [`beautifyNumber(number, [decPlaces])`](#user-content-beautifynumbernumber-decplaces)
+	- [`beautifyMoney(amount, [currency, raw])`](#user-content-beautifymoneyamount-currency-raw)
 	
 	
 
@@ -54,4 +55,23 @@ Returns following result:
 
 ```json
 1.05M
+```
+
+- - -
+
+### `beautifyMoney(amount, [currency, raw])`
+
+Generates a decorated amount where:
+- `amount` - amount.
+- `currency` - optional currency. Available currency format __USD,EUR,CRC,GBP,ILS,INR,JPY,KRW,NGN,PHP,PLN,PYG,THB,UAH,VND__. Default __USD__ 
+- `raw` - optional raw. {boolean}
+
+```js
+Utils.beautifyMoney(1545, 'GBP')
+```
+
+Returns following result:
+
+```json
+£1.55K
 ```
