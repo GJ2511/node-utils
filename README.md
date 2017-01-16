@@ -10,7 +10,7 @@ const Utils = require('node-utils');
 
 - [node-utils](#start)
   - [Methods](#methods)
-    - [`beautifyDate(date, [format, seperator])`](#)
+    - [`beautifyDate(date, [format, seperator])`](#user-content-beautifydatedate-format-seperator)
 	
 	
 
@@ -24,8 +24,8 @@ const Utils = require('node-utils');
 
 Generates a decorated date object where:
 - `date` - date.
-- `format` - optional format available formats are yyyy, mm, yyyy-mm-dd, yyyy-mm-dd h:i, mm-dd-yyyy hh:ss . 
-- `seperator` - Date sepeartor default -.
+- `format` - optional format. Available formats are __yyyy, mm, yyyy-mm-dd, yyyy-mm-dd h:i, mm-dd-yyyy hh:ss__ . 
+- `seperator` - optional Date sepeartor default "-".
 
 ```js
 Utils.beautifyDate('01/16/2016', 'YYYY');
