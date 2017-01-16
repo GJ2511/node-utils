@@ -13,6 +13,7 @@ const Utils = require('node-utils');
     - [`beautifyDate(date, [format, seperator])`](#user-content-beautifydatedate-format-seperator)
 	- [`beautifyNumber(number, [decPlaces])`](#user-content-beautifynumbernumber-decplaces)
 	- [`beautifyMoney(amount, [currency, raw])`](#user-content-beautifymoneyamount-currency-raw)
+	- [`getDaysDiff(date)`](#user-content-getdaysdiffdate)
 	
 	
 
@@ -74,4 +75,20 @@ Returns following result:
 
 ```json
 £1.55K
+```
+- - -
+
+### `getDaysDiff(date)`
+
+Returns days diff from current date
+- `date` - date.
+
+```js
+Utils.getDaysDiff('01/01/2017')
+```
+
+Returns following result:
+
+```json
+16
 ```
