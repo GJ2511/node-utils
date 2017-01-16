@@ -11,6 +11,7 @@ const Utils = require('node-utils');
 - [node-utils](#start)
   - [Methods](#methods)
     - [`beautifyDate(date, [format, seperator])`](#user-content-beautifydatedate-format-seperator)
+	- [`beautifyNumber(number, [decPlaces])`](#user-content-beautifyNumbernumber-decPlaces)
 	
 	
 
@@ -31,8 +32,24 @@ Generates a decorated date object where:
 Utils.beautifyDate('01/16/2016', 'YYYY');
 ```
 
-Generates the following response payload:
+Returns following result:
 
 ```json
 2017
+```
+
+### `beautifyNumber(number, [decPlaces])`
+
+Generates a decorated Number where:
+- `number` - number.
+- `decPlaces` - optional format. Decimal place to round of number .
+
+```js
+Utils.beautifyNumber(1050000, 2);
+```
+
+Returns following result:
+
+```json
+1.05M
 ```
