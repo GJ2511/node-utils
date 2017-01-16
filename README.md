@@ -11,7 +11,7 @@ const Utils = require('node-utils');
 - [node-utils](#start)
   - [Methods](#methods)
     - [`beautifyDate(date, [format, seperator])`](#user-content-beautifydatedate-format-seperator)
-	- [`beautifyNumber(number, [decPlaces])`](#user-content-beautifyNumbernumber-decPlaces)
+	- [`beautifyNumber(number, [decPlaces])`](#user-content-beautifynumbernumber-decplaces)
 	
 	
 
@@ -37,6 +37,8 @@ Returns following result:
 ```json
 2017
 ```
+
+- - -
 
 ### `beautifyNumber(number, [decPlaces])`
 
