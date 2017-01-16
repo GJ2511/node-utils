@@ -1,0 +1,28 @@
+{
+  "name": "node-utils",
+  "version": "1.0.0",
+  "description": "Node.js module exposing some of the basic utils that helps in basic development",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GJ2511/node-utils.git"
+  },
+  "keywords": [
+    "node",
+    "utils",
+    "basic"
+  ],
+  "author": "Gaurav Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GJ2511/node-utils/issues"
+  },
+  "homepage": "https://github.com/GJ2511/node-utils#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.2.0"
+  }
+}
