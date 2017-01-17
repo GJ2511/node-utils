@@ -14,6 +14,7 @@ const Utils = require('node-utils');
 	- [`beautifyNumber(number, [decPlaces])`](#user-content-beautifynumbernumber-decplaces)
 	- [`beautifyMoney(amount, [currency, raw])`](#user-content-beautifymoneyamount-currency-raw)
 	- [`getDaysDiff(date)`](#user-content-getdaysdiffdate)
+	- [`stripHtml(html, [all])`](#user-content-striphtmlhtml-all)
 	
 	
 
@@ -91,4 +92,25 @@ Returns following result:
 
 ```json
 16
+```
+
+- - -
+
+### `stripHtml(html, [all])`
+
+Strips HTML content from HTML string. (Returns a promise)
+- `html` - HTML string.
+- `all` - __Boolean__ If __true__ strips all HTML content otherwise strips only script tag and its content
+
+```js
+	Utils.stripHtml('<script>alert(1);</script><p>HI GAURAV JOSHI</p><script>alert(1);</script>', true)
+	.then( str => {
+		console.log(str);
+	});
+```
+
+Returns following result:
+
+```json
+HI GAURAV JOSHI
 ```
