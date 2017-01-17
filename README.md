@@ -17,6 +17,7 @@ const Utils = require('node-utils');
 	- [`stripHtml(html, [all])`](#user-content-striphtmlhtml-all)
 	- [`containsWord(string, word)`](#user-content-containswordstring-word)
 	- [`getRandomNumber(min, max)`](#user-content-getrandomnumbermin-max)
+	- [`isUrlValid(url)`](#user-content-isurlvalidurl)
 	
 	
 
@@ -154,3 +155,22 @@ Returns random number between passed range
 ```
 
 Returns __number__
+
+- - -
+
+### `isUrlValid(url)`
+
+Returns random number between passed range
+- `url` - string - URL string
+
+```js
+	Utils.isUrlValid('https://☺.damowmow.com/');
+```
+
+Returns __boolean__
+
+```json
+true
+```
+
+
