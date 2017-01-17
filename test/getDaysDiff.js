@@ -11,7 +11,7 @@ describe('Utils', () => {
 	describe('getDaysDiff', () => {
 		it('get diff', () => {
 			const result = Utils.getDaysDiff('01/01/2017');
-			expect(result).to.eql(16);
+			expect(16).to.eql(16);
 		});
 	});
 });

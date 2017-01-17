@@ -15,6 +15,7 @@ const Utils = require('node-utils');
 	- [`beautifyMoney(amount, [currency, raw])`](#user-content-beautifymoneyamount-currency-raw)
 	- [`getDaysDiff(date)`](#user-content-getdaysdiffdate)
 	- [`stripHtml(html, [all])`](#user-content-striphtmlhtml-all)
+	- [`containsWord(string, word)`](#user-content-containswordstring-word)
 	
 	
 
@@ -113,4 +114,28 @@ Returns following result:
 
 ```json
 HI GAURAV JOSHI
+```
+
+- - -
+
+### `containsWord(string, word)`
+
+Checks word exists in the string and return true or false accordingly. (*NOTE: check existence of complete word not sub string)
+- `string` - string - string in which to check
+- `word` - word - word to check
+
+```js
+	Utils.containsWord('Hi I am a MEAN stack developer', 'MEAN');
+	 AND
+	Utils.containsWord('Hi I am a MEAN stack developer', 'velop');
+```
+
+Returns following result:
+
+```json
+true
+
+AND
+
+false
 ```
