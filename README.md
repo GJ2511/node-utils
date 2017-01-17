@@ -16,6 +16,7 @@ const Utils = require('node-utils');
 	- [`getDaysDiff(date)`](#user-content-getdaysdiffdate)
 	- [`stripHtml(html, [all])`](#user-content-striphtmlhtml-all)
 	- [`containsWord(string, word)`](#user-content-containswordstring-word)
+	- [`getRandomNumber(min, max)`](#user-content-getrandomnumbermin-max)
 	
 	
 
@@ -139,3 +140,17 @@ AND
 
 false
 ```
+
+- - -
+
+### `getRandomNumber(min, max)`
+
+Returns random number between passed range
+- `min` - number - min range __default 0__
+- `max` - number - max range __default 1__
+
+```js
+	Utils.getRandomNumber(1, 5);
+```
+
+Returns __number__
