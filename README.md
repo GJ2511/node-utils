@@ -1,7 +1,7 @@
 # node-utils
-Node.js module exposing some of the basic utils that helps in basic development
+Node.js module exposing some of the basic utils that helps in basic development which I came across during development
 
-Author: [Gaurav Joshi](https://github.com/GJ2511/countries)
+Author: [Gaurav Joshi](https://github.com/GJ2511/)
 
 ## Start
 ```js
@@ -21,13 +21,9 @@ const Utils = require('node-utils');
 	- [`getPathFromUrl(url)`](#user-content-getpathfromurlurl)
 	- [`getQueryString(url)`](#user-content-getquerystringurl)
 	- [`getQueryParamByName(param, url)`](#user-content-getqueryparambynameparam-url)
+	- [`startsWith(string, searchString, [position])`](#user-content-startswithstring-searchstring-position)	
 	
 	
-
-
-
-
-
 ## Methods
 
 ### `beautifyDate(date, [format, seperator])`
@@ -210,7 +206,6 @@ Returns __object__
 {"a": 3, "b": 4}
 ```
 
-
 - - -
 
 ### `getQueryParamByName(param, url)`
@@ -227,4 +222,24 @@ Returns value or null
 
 ```json
 3
+```
+
+- - -
+
+### `startsWith(string, searchString, [position])`
+
+Determines whether the beginning of searchString instance matches the specified string when compared using the position.
+
+- `string` - string - The string from compare.
+- `searchString` - string - The string to compare.
+- `position` - number - position
+
+```js
+	Utils.startsWith('Hello MEAN developers', 'EAN', 7);
+```
+
+Returns __boolean__
+
+```json
+true
 ```
