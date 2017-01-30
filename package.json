@@ -27,5 +27,8 @@
   },
   "dependencies": {
     "jsdom": "^9.9.1"
+  },
+  "directories": {
+    "test": "test"
   }
 }
