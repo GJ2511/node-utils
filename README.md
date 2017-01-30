@@ -19,6 +19,7 @@ const Utils = require('node-utils');
 	- [`getRandomNumber(min, max)`](#user-content-getrandomnumbermin-max)
 	- [`isUrlValid(url)`](#user-content-isurlvalidurl)
 	- [`getPathFromUrl(url)`](#user-content-getpathfromurlurl)
+	- [`getQueryString(url)`](#user-content-getquerystringurl)
 	
 	
 
@@ -189,4 +190,21 @@ Returns __string__
 
 ```json
 https://☺.damowmow.com
+```
+
+- - -
+
+### `getQueryString(url)`
+
+Returns query string parameters as an javascript oblect
+- `url` - string - URL string
+
+```js
+	Utils.getQueryString('https://☺.damowmow.com?a=3&b=4');
+```
+
+Returns __object__
+
+```json
+{a: 3, b: 4}
 ```
