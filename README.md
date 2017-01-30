@@ -20,6 +20,7 @@ const Utils = require('node-utils');
 	- [`isUrlValid(url)`](#user-content-isurlvalidurl)
 	- [`getPathFromUrl(url)`](#user-content-getpathfromurlurl)
 	- [`getQueryString(url)`](#user-content-getquerystringurl)
+	- [`getQueryParamByName(param, url)`](#user-content-getqueryparambynameparam-url)
 	
 	
 
@@ -206,5 +207,24 @@ Returns query string parameters as an javascript oblect
 Returns __object__
 
 ```json
-{a: 3, b: 4}
+{"a": 3, "b": 4}
+```
+
+
+- - -
+
+### `getQueryParamByName(param, url)`
+
+Returns query string values 
+- `param` - string - Param name
+- `url` - string - URL string
+
+```js
+	Utils.getQueryParamByName('a', 'https://☺.damowmow.com?a=3&b=4');
+```
+
+Returns value or null
+
+```json
+3
 ```
