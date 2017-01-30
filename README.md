@@ -18,6 +18,7 @@ const Utils = require('node-utils');
 	- [`containsWord(string, word)`](#user-content-containswordstring-word)
 	- [`getRandomNumber(min, max)`](#user-content-getrandomnumbermin-max)
 	- [`isUrlValid(url)`](#user-content-isurlvalidurl)
+	- [`getPathFromUrl(url)`](#user-content-getpathfromurlurl)
 	
 	
 
@@ -173,4 +174,19 @@ Returns __boolean__
 true
 ```
 
+- - -
 
+### `getPathFromUrl(url)`
+
+Returns path from url skipping query parameters
+- `url` - string - URL string
+
+```js
+	Utils.getPathFromUrl('https://☺.damowmow.com?a=3');
+```
+
+Returns __string__
+
+```json
+https://☺.damowmow.com
+```
