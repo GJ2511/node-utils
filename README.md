@@ -9,21 +9,20 @@ const Utils = require('node-utils');
 ```
 
 - [node-utils](#start)
-  - [Methods](#methods)
-    - [`beautifyDate(date, [format, seperator])`](#user-content-beautifydatedate-format-seperator)
-	- [`beautifyNumber(number, [decPlaces])`](#user-content-beautifynumbernumber-decplaces)
-	- [`beautifyMoney(amount, [currency, raw])`](#user-content-beautifymoneyamount-currency-raw)
-	- [`getDaysDiff(date)`](#user-content-getdaysdiffdate)
-	- [`stripHtml(html, [all])`](#user-content-striphtmlhtml-all)
-	- [`containsWord(string, word)`](#user-content-containswordstring-word)
-	- [`getRandomNumber(min, max)`](#user-content-getrandomnumbermin-max)
-	- [`isUrlValid(url)`](#user-content-isurlvalidurl)
-	- [`getPathFromUrl(url)`](#user-content-getpathfromurlurl)
-	- [`getQueryString(url)`](#user-content-getquerystringurl)
-	- [`getQueryParamByName(param, url)`](#user-content-getqueryparambynameparam-url)
-	- [`startsWith(string, searchString, [position])`](#user-content-startswithstring-searchstring-position)	
-	- [`getRandomString(len, charStr)`](#user-content-getrandomstringlen-charstr)
-	
+	- [Methods](#methods)
+		- [`beautifyDate(date, [format, seperator])`](#user-content-beautifydatedate-format-seperator)
+		- [`beautifyMoney(amount, [currency, raw])`](#user-content-beautifymoneyamount-currency-raw)
+		- [`beautifyNumber(number, [decPlaces])`](#user-content-beautifynumbernumber-decplaces)
+		- [`containsWord(string, word)`](#user-content-containswordstring-word)
+		- [`getDaysDiff(date)`](#user-content-getdaysdiffdate)
+		- [`getPathFromUrl(url)`](#user-content-getpathfromurlurl)
+		- [`getQueryParamByName(param, url)`](#user-content-getqueryparambynameparam-url)
+		- [`getQueryString(url)`](#user-content-getquerystringurl)
+		- [`getRandomNumber(min, max)`](#user-content-getrandomnumbermin-max)
+		- [`getRandomString(len, charStr)`](#user-content-getrandomstringlen-charstr)
+		- [`isUrlValid(url)`](#user-content-isurlvalidurl)
+		- [`startsWith(string, searchString, [position])`](#user-content-startswithstring-searchstring-position)	
+		- [`stripHtml(html, [all])`](#user-content-striphtmlhtml-all)
 	
 ## Methods
 
