@@ -1,6 +1,6 @@
 {
   "name": "node-js-utilities",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Node.js module exposing some of the basic utils that helps in basic development",
   "main": "index.js",
   "scripts": {
