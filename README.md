@@ -22,6 +22,7 @@ const Utils = require('node-utils');
 	- [`getQueryString(url)`](#user-content-getquerystringurl)
 	- [`getQueryParamByName(param, url)`](#user-content-getqueryparambynameparam-url)
 	- [`startsWith(string, searchString, [position])`](#user-content-startswithstring-searchstring-position)	
+	- [`getRandomString(len, charStr)`](#user-content-getRandomStringlen-charstr)
 	
 	
 ## Methods
@@ -243,3 +244,19 @@ Returns __boolean__
 ```json
 true
 ```
+
+- - -
+
+### `getRandomString(len, charStr)`
+
+Returns random string of passed length
+- `len` - number - length of random string __default 4__
+- `charStr` - string - charcters list to create random string __default aplha numeric__
+
+```js
+	Utils.getRandomString(4);
+```
+
+Returns __string__
+
+- - -
