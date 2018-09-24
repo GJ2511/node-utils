@@ -22,7 +22,7 @@ const Utils = require('node-utils');
 	- [`getQueryString(url)`](#user-content-getquerystringurl)
 	- [`getQueryParamByName(param, url)`](#user-content-getqueryparambynameparam-url)
 	- [`startsWith(string, searchString, [position])`](#user-content-startswithstring-searchstring-position)	
-	- [`getRandomString(len, charStr)`](#user-content-getRandomStringlen-charstr)
+	- [`getRandomString(len, charStr)`](#user-content-getrandomstringlen-charstr)
 	
 	
 ## Methods
